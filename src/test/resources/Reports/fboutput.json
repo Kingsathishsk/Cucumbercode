@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-02-04T06:57:39.046Z",
+        "line": 11,
+        "name": "To verify login using valid and invalid credential",
+        "description": "",
+        "id": "to-validate-the-login-functionality;to-verify-login-using-valid-and-invalid-credential;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8785625600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user launch Facebook application",
+            "match": {
+              "location": "LoginSteps.user_launch_Facebook_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 365372200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enter \"abc\" and \"abc@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"abc@123\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginSteps.user_enter_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73793200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click Login button",
+            "match": {
+              "location": "LoginSteps.user_click_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10927240600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user see the results based on \"negative\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"negative\"",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginSteps.user_see_the_results_based_on(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate the Login functionality",
+    "description": "",
+    "id": "to-validate-the-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Featurefile/login.feature",
+    "tags": []
+  }
+]
